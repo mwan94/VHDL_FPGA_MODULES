@@ -31,16 +31,16 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity and_gate_project is
+entity and_gate is
   Port ( 
             switch_1 : in std_logic;
             switch_2 : in std_logic;
             led_1    : out std_logic               
   );
-end and_gate_project;
+end and_gate;
 
 
-architecture RTL of and_gate_project is
+architecture RTL of and_gate is
 begin
 
     led_1 <= switch_1 and switch_2;
